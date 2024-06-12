@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  body{
+    @apply bg-slate-950 text-slate-50
+  }
+  }
+.Dropdown-option{
+  @apply py-1 px-2 hover:bg-slate-800
+}
+
+@keyframes greenFlash {
+  0% { @apply bg-green-900; }
+  100% { @apply bg-transparent; }
+}
+
+@keyframes redFlash {
+  0% { @apply bg-red-900; }
+  100% { @apply bg-transparent; }
+}
+
+.animate-greenFlash {
+  animation: greenFlash 0.5s ease;
+}
+
+.animate-redFlash {
+  animation: redFlash 0.5s ease;
+}
